@@ -1,6 +1,6 @@
 import { GoogleGenAI } from "@google/genai";
 
-const apiKey = process.env.API_KEY;
+const apiKey = process.env.GEMINI_API_KEY;
 // Initialize the client conditionally to avoid errors during build if key is missing, 
 // though standard practice assumes it's there.
 const ai = apiKey ? new GoogleGenAI({ apiKey }) : null;
